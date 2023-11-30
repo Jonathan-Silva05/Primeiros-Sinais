@@ -1,0 +1,90 @@
+body{
+    overflow: hidden;
+}
+#fundo{
+    position: absolute;
+    height: 110%;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header {
+    color: #333;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4em;
+    width: 100%;
+    max-width: 800px;
+    padding: 19px;
+    margin: -6px 0 15px;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 8px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.card {
+   aspect-ratio: 3/4;
+   width: 79%;
+   border-radius: 5px;
+   position: relative;
+   transition: all 400ms ease;
+   transform-style: preserve-3d;
+   background-color: #fff;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+   
+}
+
+.back {
+    background-color: #0D9CED;
+    backface-visibility: hidden;
+    
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0,5;
+}
+
+
+
+.rowBtn{
+    z-index: 1;
+    transition: 1s;
+    position: absolute;
+    left: 4%;
+    top: -1%;
+}
