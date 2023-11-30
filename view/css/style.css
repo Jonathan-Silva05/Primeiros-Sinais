@@ -1,0 +1,706 @@
+	@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+
+	/* ==================================================== 
+		FONTS
+	==================================================== */
+	@font-face {
+		font-family: cherryBomb;
+		src: url(font/Cherry\ Bomb/cherry-bomb-regular-1.ttf);
+	}
+
+	@font-face {
+		font-family: inter;
+		src: url(font/Inter/Inter-Medium.ttf);
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+	img {
+		user-select: none;
+	}
+
+	::-webkit-scrollbar {
+		visibility: hidden;
+		width: 0px;
+	}
+
+	.color0-1{
+		color: #000;
+	}
+
+	.color1-1{
+		color: #FFF;
+	}
+
+	.color1 {
+		color: #F43840;
+	}
+
+	.bgcolor1 {
+		background: #F43840;
+	}
+
+	.color2 {
+		color: #00F;
+	}
+
+	.bgcolor2 {
+		background: #00F;
+	}
+
+	.color3 {
+		color: #FF0;
+	}
+
+	.color4 {
+		color: #008000;
+	}
+
+	.bgcolor4 {
+		background: #008000;
+	}
+
+	.color5 {
+		color: #FA3E5F;
+	}
+
+	.color6 {
+		color: #FFA500;
+	}
+
+	.bgcolor6 {
+		background: #FFA500;
+	}
+
+	.color7 {
+		color: #0D9CED;
+	}
+
+	.bgcolor7 {
+		background-color: #0D9CED;
+	}
+
+
+	/* ==================================================== 
+		ÁREA NÃO VISIVEL
+	 ==================================================== */
+	#notVisible {
+		display: none;
+		position: relative;
+		visibility: hidden;
+		user-select: none;
+		z-index: 0;
+	}
+
+
+	/* ==================================================== 
+		INDEX
+	 ==================================================== */
+	#body-index {
+		background-image: url(../img/MicrosoftTeams-image.png);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+
+	#principalIndex{
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+		user-select: none;
+	}
+
+	#principalIndex * {
+		font-family: cherryBomb;
+	}
+
+	#principalIndex .imgLogo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 45%;
+		padding: 15px;
+		margin: 20px;
+	}
+
+	#principalIndex .imgLogo img {
+		height: 90%;
+	}
+
+	.rowBtn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 5em;
+		gap: 15px;
+		padding: 10px;
+	}
+
+	.rowBtn .btn {
+		border-radius: 15px;
+		border: none;
+		color: #F5F5F5;
+		transition: 1.5s;
+		padding: 10px 72px;
+		font-size: 2.25rem;
+		cursor: pointer;
+		transform: scale(0.95);
+		margin-top: 1%;
+	}
+
+	.rowBtn .btn:hover {
+		transform: scale(1.0);
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+
+	.rowBtn:hover > :not(:hover) {
+		transform: scale(0.9);
+	}
+
+
+	/* ==================================================== 
+		TELA SOBRE NÓS
+	==================================================== */
+	nav {
+		display: flex;
+		height: 80px;
+		width: 100%;
+		background-color: #fff;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 50px 0 100px;
+		flex-wrap: wrap;
+		top: 0;
+		position: sticky;
+		white-space: nowrap;
+		z-index: 500;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+		font-family: inter;
+	}
+
+	nav .logo {
+		height: 75px;
+		margin: auto 0 auto 0;
+		cursor: pointer;
+	}
+
+	nav .logo img {
+		height: 100%;
+	}
+
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		z-index: 1000;
+	}
+
+	nav ul li {
+		margin: 0 5px;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 8px 15px;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		transition: all 0.3s ease;
+		font-weight: 700;
+		background: none;
+	}
+
+	nav .menu-btn i {
+		color: #000;
+		cursor: pointer;
+		display: none;
+	}
+
+
+
+	.fixando {
+		animation: fixar .5s linear forwards;
+		visibility: visible;
+	}
+
+	@keyframes fixar {
+		0% {
+			overflow: hidden;
+		}
+
+		100% {
+			overflow: hidden;
+		}
+	}
+
+
+	/* ==================================================== 
+		TELA SOBRE NÓS
+	==================================================== */
+	.body-sobre,
+	.body-Embreve {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: inter;
+	}
+
+	.principalSobre,
+	.principalEmbreve {
+		max-width: 1024px;
+		background-color: #FFF;
+		padding: 40px 10px;
+	}
+
+	.modal-Lightbox {
+		height: 100vh;
+		width: 100vw;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.banner {
+		width: 100%;
+		background: linear-gradient(to top,
+				rgba(185, 230, 255, 0.00),
+				#c4ebff,
+				rgba(185, 230, 255, 0.00));
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		padding: 25px;
+	}
+
+	.banner img {
+		width: 30rem;
+	}
+
+	.txtSobre {
+		display: grid;
+		grid-template-columns: auto 35%;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		margin: 50px 0px;
+		gap: 20px;
+	}
+
+	.txtEmbreve {
+		display: grid;
+		grid-template-columns: 40% auto;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 20px;
+		margin: 50px 0px;
+		gap: 20px;
+	}
+
+	*{outline: solisd;}
+
+	.txtSobreProj,
+	.txtEmbreveProj {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		padding: 10px;
+	}
+
+	.txtSobreProj p {
+		color: #281F1F;
+		text-align: justify;
+	}
+
+	.txtEmbreveProj h2 + h2 {
+		text-decoration: underline;
+	}
+
+	.LogoSobre img {
+		width: 100%;
+	}
+
+	.LogoEmbreve img {
+		width: 40%;
+	}
+
+	.principalSobre h2 {
+		text-align: center;
+	}
+
+
+	/* ==================================================== 
+		CARROSSEL - TELA SOBRE NÓS
+	==================================================== */
+	/* Slideshow container */
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+
+	.mySlides {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+
+		margin: 20px;
+	}
+
+	.mySlides img {
+		width: 250px;
+		height: 250px;
+		margin: 10px;
+		border-radius: 250px;
+		border: solid #587ddc;
+	}
+
+	/* Next & previous buttons */
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		background-color: #0D9CED;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+		background-color: #0d7ab9;
+	}
+
+	/* The dots/bullets/indicators */
+	.divDot{
+		margin-bottom: 25px;
+		text-align:center;
+		user-select: none;
+	}
+
+	.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 12.5%;
+		margin: 2px 0px;
+		background-color: #bbb;
+		/*border-radius: 50%;*/
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+
+	.active,
+	.dot:hover {
+		background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+		from {
+			opacity: .4
+		}
+
+		to {
+			opacity: 1
+		}
+	}
+
+
+	/* ==================================================== 
+		ÁREA SOBRE - TELA SOBRE NÓS
+	==================================================== */
+
+	/* The Modal (background) */
+	.modal-Lightbox {
+		display: none;
+		position: fixed;
+		z-index: 1000;
+		padding-top: 100px;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: auto;
+		background-color: white;
+	}
+
+	/* Modal Content */
+	.modal-content-Lightbox {
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		padding: 0;
+		width: 100%;
+	}
+
+	/* The Close Button */
+	.close-Lightbox {
+		color: red;
+		position: absolute;
+		top: 25px;
+		right: 40px;
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	.close-Lightbox:hover,
+	.close-Lightbox:focus {
+		color: darkred;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.mySlides-Lightbox {
+		display: none;
+	}
+
+	.cursor-Lightbox {
+		cursor: pointer;
+	}
+
+	/* Next & previous buttons */
+	.prev-Lightbox,
+	.next-Lightbox {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next-Lightbox {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev-Lightbox:hover,
+	.next-Lightbox:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext-Lightbox {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+
+	.demo-Lightbox {
+		opacity: 0.6;
+	}
+
+	.active-Lightbox,
+	.demo-Lightbox:hover {
+		opacity: 1;
+	}
+
+	.mySlides img {
+		transition: 0.3s;
+	}
+
+	.mySlides img:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+.gradeSobre {
+        min-height: 80vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto 50%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .gradeSobre .nomeImg {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        min-width: 45%;
+        max-width: 90%;
+        height: auto;
+    }
+ 
+    .gradeSobre .nomeImg img {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 250px;
+        border: solid #587ddc;
+    }
+ 
+    .gradeSobre .txtColab {
+        background: #587ddc;
+        color: white;
+        min-width: 45%;
+        max-width: 90%;
+        min-height: 25vh;
+        max-height: auto;
+        margin: 25px 15px 25px 15px;
+        padding-top: 0;
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px 0px;
+        box-shadow: 0px 0px 20px #666666;
+    }
+	.gradeSobre .txtColab p,
+	.gradeSobre .txtColab i {
+		color: #f5f5f5;
+		text-align: justify;
+		word-break: break-word;
+		padding: 20px;
+	}
+
+
+	/* ==================================================== 
+		TELA VOGAIS
+	==================================================== */
+
+
+	/* ==================================================== 
+		TELA JOGOS IFRAME
+	==================================================== */
+	.divIframe {
+		display: flex;
+		padding: 20px;
+		width: 100vw;
+		height: 75vh;
+	}
+
+	iframe {
+		width: 1000%;
+		height: 100%;
+		border: 3px solid gray;
+		border-radius: 15px;
+	}
+
+
+	/* ==================================================== 
+		RODAPÉ
+	==================================================== */
+	footer {
+		width: 100%;
+		height: 70px;
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 20px;
+		background: #0D9CED;
+		align-items: center;
+		font-family: inter;
+
+	}
+
+	footer h4 {
+		color: #fff;
+		text-align: center;
+	}
+
+
+
+	@media only screen and (max-width: 920px) {
+		#body-index {
+			background-image: none;
+		}
+
+		#notVisible {
+			height: 100vh;
+			width: 100vw;
+			background-color: cornflowerblue;
+			color: #FFF;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			padding: 20px;
+			position: absolute;
+			visibility: visible;
+			z-index: 1000;
+		}
+
+		.imgNot {
+			display: flex;
+		}
+
+		.imgNot img {
+			height: 175px;
+		}
+
+		.titleNot {
+			font-size: 4.5em;
+			font-family: cherryBomb;
+		}
+
+		.titleNot h2 {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.txtNot {
+			font-size: 1.25em;
+			font-family: Arial;
+			text-align: center;
+		}
+
+		#principalIndex,
+		#principalVisible {
+			display: none;
+			position: relative;
+			visibility: hidden;
+			z-index: 0;
+		}
+	}

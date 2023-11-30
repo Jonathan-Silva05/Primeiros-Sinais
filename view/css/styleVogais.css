@@ -1,0 +1,119 @@
+button{
+    font-family: cherryBomb;
+    font-size: 2.25rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#body-Vogais{
+    height: 100vh;
+    user-select: none;
+}
+
+.menuVogais{
+    padding: 20px;
+}
+
+.menuVogais .btn {
+    border-radius: 15px;
+    border: none;
+    color: #F5F5F5;
+    transition: 1.5s;
+    padding: 10px 72px;
+    font-size: 2.25rem;
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.menuVogais .btn:hover {
+    transform: scale(1.0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.principalVogais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.principalVogais img{ width: 100%; margin: auto auto;}
+
+.vogais{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+#e{
+    display: flex;
+    align-self: flex-start;
+}
+
+#a, #i{
+    display: flex;
+    align-self: center;
+}
+
+#o, #u{
+    display: flex;
+    align-self: flex-end;
+}
+
+.grayColor .imgGray{
+    filter: grayscale(90%);
+}
+
+.grayColor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grayColor .imgGray:hover{
+    filter: grayscale(95%);
+}
+
+div.tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tip:active {
+    cursor: help;
+    position: relative;
+}
+
+div.tip span,
+div.tip .cadeado {
+    display: none;
+}
+
+div.tip:active span{
+    color: #ffffff;
+    font-family: inter;
+    font-size: larger;
+    border-radius: 15px;
+    padding: 8px 14px;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    width: 250px;
+    position: absolute;
+}
+
+div.tip:hover .cadeado{
+    color: #ffffff;
+    font-family: inter;
+    font-size: larger;
+    border-radius: 15px;
+    padding: 8px 14px;
+    display: block;
+    text-align: center;
+    z-index: 100;
+    width: 125px;
+    position: absolute;
+}
