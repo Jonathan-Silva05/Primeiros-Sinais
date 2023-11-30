@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- ======================== CSS EXTRA ======================== -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- ========================= FAVICON ========================= -->
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+	<title>Primeiros Sinais - Sobre Nós</title>
+</head>
+
+<body id="overflowFixed">
+	<div id="principalVisible" class="body-sobre">
+		<!-- ========================= MENU ========================= -->
+		<nav>
+			<div class="logo" onclick="window.location.href='../index.html'">
+				<img src="./img/logo.png">
+			</div>
+
+			<div class="menu-btn">
+				<i class="fa fa-bars fa-2x" onclick="menuShow(); action()"></i>
+			</div>
+
+			<ul>
+				<li> <a href="../index.html" class="color6"> Início </a> </li>
+				<li> <a href="vogais.html" class="color4"> Jogar </a> </li>
+				<li> <a href="sobre.html" class="color2"> Sobre </a> </li>
+			</ul>
+		</nav>
+		<!-- ======================= FIM MENU ======================= -->
+
+
+		<!-- ======================= CONTEUDO ======================= -->
+		<div class="principalSobre">
+			<div class="banner">
+				<img src="./img/turminha.png">
+			</div>
+
+			<div class="txtSobre">
+				<div class="txtSobreProj">
+					<h2 class="color1">Sobre o projeto</h2>
+					<p>
+						O projeto "Primeiros Sinais" surgiu através de uma aluna participante do TCC, Ester Julia.
+						Ela possui uma tia pedagoga que trabalha com crianças que possuem algum tipo de deficiência,
+						onde perguntas foram feitas em relação a aprendizagem.
+					</p>
+
+					<p>
+						Foram encontrados problemas como a falta de material prático por exemplo. Dessa forma, surgiu a
+						ideia de um software voltado para crianças
+						surdas, auxiliando e ajudando na alfabetização.
+					</p>
+
+					<p>
+						O projeto consiste em um jogo educativo para crianças surdas com idade entre 4 e 6 anos.
+						O jogo conterá 5 histórias, cada história terá como base uma vogal, e possuirá 3 fases.
+						No final de haverá um jogo da memória. Por ser um projeto acadêmico, a princípio será feito
+						somente a história com a vogal “A”.
+					</p>
+				</div>
+
+				<div class="LogoSobre">
+					<img src="./img/LogoTitle.png">
+				</div>
+			</div>
+
+			<!-- ====================== CARROSSEL ====================== -->
+			<h2 class="color7">Conheça os membros da equipe</h2>
+
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="./img/fotoDih.png" onclick="action(); openModalLightBox();currentSlideLightBox(1)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(1)" class="cursor-Lightbox">
+						Diemini A. dos Santos
+					</p>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/fotoEdu.png" onclick="action(); openModalLightBox();currentSlideLightBox(4)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(4)" class="cursor-Lightbox">
+						Eduardo G. de Lima
+					</p>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/fotoEster.png" onclick="action(); openModalLightBox();currentSlideLightBox(3)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(3)" class="cursor-Lightbox">
+						Ester Julia L. da Silva
+					</p>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/fotoJohnA.png" onclick="action(); openModalLightBox();currentSlideLightBox(6)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(6)" class="cursor-Lightbox">
+						Jonathan P. P. Silva
+					</p>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/fotoRennan.png" onclick="action(); openModalLightBox();currentSlideLightBox(5)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(5)" class="cursor-Lightbox">
+						Rennan do P. Oliveira </p>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/fotoVictor.png" onclick="action(); openModalLightBox();currentSlideLightBox(2)"
+						class="hover-shadow-Lightbox cursor-Lightbox">
+					<p onclick="action(); openModalLightBox();currentSlideLightBox(2)" class="cursor-Lightbox">
+						Victor D. Pereira
+					</p>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+
+			<div class="divDot">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+			</div>
+			<!-- ==================== FIM CARROSSEL ==================== -->
+
+		</div>
+		<!-- ===================== FIM CONTEUDO ===================== -->
+
+
+		<!-- ====================== LIGHT-BOX ====================== -->
+		<div id="myModal-Lightbox" class="modal-Lightbox">
+			<span class="close-Lightbox cursor-Lightbox" onclick="action(); closeModalLightBox()"
+				title="Fechar">&times;</span>
+
+			<div class="modal-content-Lightbox">
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoDih.png">
+							Diemini A. dos Santos
+						</div>
+
+						<div class="txtColab">
+							<h3>Diemini Alves dos Santos</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar e responsável por administrar o
+									projeto 'Primeiro Sinais'.
+									Desempenhou funções como organizar o planejamento do jogo, escrita do projeto e
+									distribuição de tarefas e prazos.
+									Também esteve responsável pela identidade visual do site, buscando um design prático
+									e interativo.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoVictor.png">
+							Victor D. Pereira
+						</div>
+
+						<div class="txtColab">
+							<h3>Victor Duarte Pereira</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar, responsável por toda escrita do
+									projeto,
+									participando de todos os capítulos e textos voltados a escrita. Buscou empenhar uma
+									ótima estrutura para cada capítulo feito.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoEster.png">
+							Ester Julia L. da Silva
+						</div>
+
+						<div class="txtColab">
+							<h3>Ester Julia Lira da Silva</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar e criadora do tema para o projeto.
+									Foi responsável pela criação dos cenários e outros elementos, estabelecendo um
+									desenho agradável de se ver.
+									Foi responsável também pela história e roteiro do jogo.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoEdu.png">
+							Eduardo G. de Lima
+						</div>
+
+						<div class="txtColab">
+							<h3>Eduardo Gomes de Lima</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar, responsável pela programação do
+									jogo.
+									Auxiliou também nas animações para o desenvolvimento do projeto.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoRennan.png">
+							Rennan do P. Oliveira
+						</div>
+
+						<div class="txtColab">
+							<h3>Rennan do Prado Oliveira</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar, responsável pelas pesquisas feitas
+									para desenvolver com conhecimento o projeto "Primeiro Sinais".
+									Também Participou das atividades de animação do projeto, juntamente com a programação.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides-Lightbox">
+					<div class="gradeSobre">
+						<div class="nomeImg">
+							<img src="./img/fotoJohnA.png">
+							Jonathan P. P. Silva
+						</div>
+
+						<div class="txtColab">
+							<h3>Jonathan Pablo Pereira Silva</h3>
+							<p>
+								<i>
+									Estudante da ETEC Dr. Emílio Hernandez Aguilar, criador de todos os personagens do
+									jogo.
+									Desenvolveu os personagens de uma forma que todos tivessem um padrão e hierarquia
+									entre eles.
+									Também Participou das atividades de programação do projeto, juntamente com as
+									animações.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ==================== FIM LIGHT-BOX ==================== -->
+	</div>
+
+	<!-- ===================== DIV INDISPONÍVEL ===================== -->
+	<div id="notVisible">
+		<div class="imgNot">
+			<img src="./img/logoAraraTriste.png">
+		</div>
+
+		<div class="titleNot">
+			<h2>
+				<p class="color1">O</p>
+				<p class="color2">o</p>
+				<p class="color3">p</p>
+				<p class="color4">s</p>
+				<p class="color5">!</p>
+			</h2>
+		</div>
+		<div class="txtNot">
+			<p> Parece que esta página não é compativel com seu dispositivo </p>
+		</div>
+	</div>
+	<!-- =================== FIM DIV INDISPONÍVEL =================== -->
+
+
+	<!-- ======================== RODAPÉ ======================== -->
+	<footer>
+		<h4>© 2023 Todos os direitos reservados</h4>
+	</footer>
+	<!-- ====================== FIM RODAPÉ ====================== -->
+
+
+	<script type="text/javascript" src="./js/funcoes.js"></script>
+	<script type="text/javascript" src="./js/funcoesCarrossel.js"></script>
+	<script type="text/javascript" src="./js/funcoesLightBox.js"></script>
+</body>
+
+</html>

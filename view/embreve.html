@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- ========================= FAVICON ========================= -->
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+
+	<title>Em breve</title>
+
+</head>
+
+<body>
+	<div id="principalVisible" class="body-Embreve">
+		<!-- ========================= MENU ========================= -->
+		<nav>
+			<div class="logo" onclick="window.location.href = '../index.html'">
+				<img src="./img/logo.png">
+			</div>
+
+			<div class="menu-btn">
+				<i class="fa fa-bars fa-2x" onclick="menuShow(); action()"></i>
+			</div>
+
+			<ul>
+				<li> <a href="../index.html" class="color1"> Início </a> </li>
+				<li> <a href="vogais.html" class="color4"> Jogar </a> </li>
+				<li> <a href="sobre.html" class="color2"> Sobre </a> </li>
+			</ul>
+		</nav>
+		<!-- ======================= FIM MENU ======================= -->
+
+		<div class="principalEmbreve">
+			<div class="banner">
+				<img src="./img/turminha.png">
+			</div>
+
+			<div class="txtEmbreve">
+				<div class="LogoEmbreve">
+					<img src="./img/logoAraraTriste.png">
+				</div>
+				<div class="txtEmbreveProj">
+					<h1 class="color1">EM BREVE!</h1>
+					<h2 class="color7">Por enquanto curta os nossos outros</h2>
+					<h2 class="color4" onclick="location.href='vogais.html'">Jogos.</a></h2>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ===================== DIV INDISPONÍVEL ===================== -->
+	<div id="notVisible">
+		<div class="imgNot">
+			<img src="./img/logoAraraTriste.png">
+		</div>
+
+		<div class="titleNot">
+			<h2>
+				<p class="color1">O</p>
+				<p class="color2">o</p>
+				<p class="color3">p</p>
+				<p class="color4">s</p>
+				<p class="color5">!</p>
+			</h2>
+		</div>
+		<div class="txtNot">
+			<p> Parece que esta página não é compativel com seu dispositivo </p>
+		</div>
+	</div>
+	<!-- =================== FIM DIV INDISPONÍVEL =================== -->
+
+
+	<script type="text/javascript" src="./js/funcoes.js"></script>
+</body>
+
+</html>
